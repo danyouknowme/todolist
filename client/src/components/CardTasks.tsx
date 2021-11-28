@@ -1,4 +1,5 @@
 import React, { FC } from 'react';
+import { Link } from 'react-router-dom';
 import './cardtasks.scss';
 
 interface Props {
@@ -18,10 +19,10 @@ const CardTasks: FC<Props> = (props) => {
                 <span>{props.description}</span>
             </div>
             <div className="showed">
-                <a href='/'>Show</a>
+                <Link to={{ pathname: `/${props._id}`, state: props }} >Show</Link>
             </div>
             <div className="edited">
-                <a href='/'>Edit</a>
+                <Link to={{ pathname: `/${props._id}` }} >Edit</Link>
             </div>
             <div className="deleted">
                 <a href='/'>Delete</a>
