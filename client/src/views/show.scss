@@ -38,5 +38,17 @@
                 align-items: center;
             }
         }
+
+        a {
+            color: white;
+            text-decoration: none;
+            background-color: #ff9966;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            display: inline-block;
+            margin-top: 10px;
+        }
     }
 }
