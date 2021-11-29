@@ -13,7 +13,7 @@ interface TasksProps {
 const Show: FC = () => {
     let location = useLocation();
     const state = location.state as TasksProps;
-    const { title, description } = state;
+    const { title, description, _id } = state;
     return (
         <div className="show">
             <div className="wrapper">
@@ -36,7 +36,7 @@ const Show: FC = () => {
                         <span>{description}</span>
                     </div>
                 </div>
-                <Link to="/">Edit task</Link>
+                <Link to={{ pathname: `/${_id}/edit`, state: state }}>Edit Task</Link>
             </div>
         </div>
     )

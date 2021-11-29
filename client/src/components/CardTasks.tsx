@@ -29,7 +29,7 @@ const CardTasks: FC<Props> = (props) => {
                 <Link to={{ pathname: `/${props._id}`, state: props }} >Show</Link>
             </div>
             <div className="edited">
-                <Link to={{ pathname: `/${props._id}` }} >Edit</Link>
+                <Link to={{ pathname: `/${props._id}/edit`, state: props }} >Edit</Link>
             </div>
             <div className="deleted">
                 <span onClick={() => deleteTask(props._id)}>Delete</span>

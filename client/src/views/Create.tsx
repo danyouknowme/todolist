@@ -25,7 +25,7 @@ const Create = () => {
     return (
         <div className="show">
             <div className="wrapper">
-                <h1>Show task</h1>
+                <h1>Create task</h1>
                 <div>
                     <div className="task">
                         <AddCircle />
