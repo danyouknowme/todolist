@@ -8,6 +8,7 @@ interface TasksProps {
     "_id": string,
     "title": string,
     "description": string,
+    "isDone": boolean,
     "__v": number
 }
 
@@ -25,6 +26,9 @@ const Home: FC = () => {
             <div className="wrapper">
                 <h1>Tasks</h1>
                 <div className="table">
+                    <div className="done">
+                        <span>Done</span>
+                    </div>
                     <div className="tasks">
                         <Assignment />
                         <span>Tasks</span>

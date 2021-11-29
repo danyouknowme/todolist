@@ -27,8 +27,19 @@
                 border-right: 1px solid rgba(0, 0, 0, 0.5);
             }
 
+            .done {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                span {
+                    font-weight: 500;
+                }
+            }
+
             .tasks {
-                flex: 3;
+                flex: 2;
                 padding: 15px 0;
                 display: flex;
                 align-items: center;

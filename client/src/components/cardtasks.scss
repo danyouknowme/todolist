@@ -13,8 +13,28 @@
         border-right: 1px solid rgba(0, 0, 0, 0.5);
     }
 
+    .donetask {
+        text-decoration: line-through;
+    }
+
+    .done {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .flip {
+            transform: rotate(0);
+        }
+
+        svg {
+            cursor: pointer;
+            transition: transform 0.6s;
+        }
+    }
+
     .title {
-        flex: 3;
+        flex: 2;
         padding: 10px 0;
         display: flex;
         align-items: center;
